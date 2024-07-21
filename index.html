@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio Showcase</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo">CreativeHub</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Discover Talent</a></li>
+                <li><a href="#">For Creators</a></li>
+                <li><a href="#">Get Inspired</a></li>
+                <li><a href="#">Learn Design</a></li>
+                <li><a href="#">Go Pro</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="btn btn-login">Log in</a>
+            <a href="#" class="btn btn-signup">Sign up</a>
+        </div>
+    </header>
+
+    <main>
+        <nav class="category-nav">
+            <a href="#" class="active">Discover</a>
+            <a href="#">Animation</a>
+            <a href="#">Branding</a>
+            <a href="#">Illustration</a>
+            <a href="#">Mobile</a>
+            <a href="#">Print</a>
+            <a href="#">Product Design</a>
+            <a href="#">Typography</a>
+            <a href="#">Web Design</a>
+        </nav>
+
+        <section class="hero">
+            <h1>Explore the world's leading creative portfolios</h1>
+            <p>Millions of designers and agencies around the world showcase their portfolio work on CreativeHub - the home to the world's best design and creative professionals.</p>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="trending-searches">
+                <span>Trending searches:</span>
+                <a href="#">landing page</a>
+                <a href="#">ui design</a>
+                <a href="#">app design</a>
+                <a href="#">logo</a>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
